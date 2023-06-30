@@ -428,7 +428,7 @@ function initUI(){
 			<img src="" id="resultsImg" />
 		</div>
 	</div>
-	<a href="https://github.com/librespeed/speedtest">Source code de Sylvestre</a>
+	<a href="https://github.com/librespeed/speedtest">Source code Sylvestre</a>
 </div>
 <div id="privacyPolicy" style="display:none">
     <h2>Privacy Policy</h2>
