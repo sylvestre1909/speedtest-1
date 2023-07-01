@@ -32,7 +32,7 @@ COPY docker/entrypoint.sh /
 
 # Prepare environment variabiles defaults
 
-ENV TITLE=Speed test from a GCP server in Paris
+ENV TITLE='Speed test from a GCP server in Paris'
 ENV MODE=standalone
 ENV PASSWORD=password
 ENV TELEMETRY=true
