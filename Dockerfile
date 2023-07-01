@@ -32,10 +32,10 @@ COPY docker/entrypoint.sh /
 
 # Prepare environment variabiles defaults
 
-ENV TITLE=LibreSpeed
+ENV TITLE=Speed test from a GCP server in Paris
 ENV MODE=standalone
 ENV PASSWORD=password
-ENV TELEMETRY=false
+ENV TELEMETRY=true
 ENV ENABLE_ID_OBFUSCATION=false
 ENV REDACT_IP_ADDRESSES=false
 ENV WEBPORT=80
