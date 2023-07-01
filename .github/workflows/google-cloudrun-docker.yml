@@ -51,7 +51,7 @@ on:
 env:
   PROJECT_ID: disco-skyline-391408 # TODO: update Google Cloud project id
   GAR_LOCATION: europe-west9 # TODO: update Artifact Registry location
-  SERVICE: speedtest # TODO: update Cloud Run service name
+  SERVICE: speedtest-1 # TODO: update Cloud Run service name
   REGION: europe-west9 # TODO: update Cloud Run service region
 
 jobs:
