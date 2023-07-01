@@ -16,6 +16,8 @@ s.onupdate=function(data){ //callback to update data in UI
     I("ulText").textContent=(data.testState==3&&data.ulStatus==0)?"...":data.ulStatus;
     I("pingText").textContent=data.pingStatus;
     I("jitText").textContent=data.jitterStatus;
+    var prog=(Number(data.dlProgress)*2+Number(data.ulProgress)*2+Number(data.pingProgress))/5;
+    I("progress").style.width=(100*prog)+"%";
 }
 s.onend=function(aborted){ //callback for test ended/aborted
     I("startStopBtn").className=""; //show start button again
@@ -149,6 +151,23 @@ function I(id){return document.getElementById(id);}
 			margin: 0 auto;
 		}
 	}
+	#progressBar{
+		width:90%;
+		height:0.3em;
+		background-color:#EEEEEE;
+		position:relative;
+		display:block;
+		margin:0 auto;
+		margin-bottom:2em;
+	}
+	#progress{
+		position:absolute;
+		top:0; left:0;
+		height:100%;
+		width:0%;
+		transition: width 2s;
+		background-color:#90BBFF;
+	}
 
 </style>
 </head>
@@ -156,6 +175,7 @@ function I(id){return document.getElementById(id);}
 <h1>LibreSpeed Example</h1>
 <div id="startStopBtn" onclick="startStop()"></div>
 <div id="test">
+    <div id="progressBar"><div id="progress"></div></div>
 	<div class="testGroup">
 		<div class="testArea">
 			<div class="testName">Download</div>
