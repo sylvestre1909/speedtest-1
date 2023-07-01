@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
-<title>LibreSpeed Example</title>
+<title><?= getenv('TITLE') ?: 'LibreSpeed Example' ?></title>
 <link rel="shortcut icon" href="favicon.ico">
 <script type="text/javascript" src="speedtest.js"></script>
 <script type="text/javascript">
@@ -172,7 +172,7 @@ function I(id){return document.getElementById(id);}
 </style>
 </head>
 <body>
-<h1>LibreSpeed Example</h1>
+<h1><?= getenv('TITLE') ?: 'LibreSpeed Example' ?></h1>
 <div id="startStopBtn" onclick="startStop()"></div>
 <div id="test">
     <div id="progressBar"><div id="progress"></div></div>
