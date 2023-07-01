@@ -32,8 +32,8 @@ COPY docker/entrypoint.sh /
 
 # Prepare environment variabiles defaults
 
-ENV TITLE='Speed test from a GCP server in Paris'
-ENV MODE=standalone
+ENV TITLE='Speed Test from a GCP Cloud Run instance in Paris'
+ENV MODE=frontend
 ENV PASSWORD=password
 ENV TELEMETRY=true
 ENV ENABLE_ID_OBFUSCATION=false
