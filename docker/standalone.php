@@ -278,7 +278,7 @@ function initUI(){
 </head>
 <body>
 <h1><?= getenv('TITLE') ?: 'LibreSpeed Example' ?></h1>
-<img src="https://cdn-ipjnf.nitrocdn.com/pMUTZcAaDXdUjVwNvsEZwOxppmdHQbKM/assets/images/optimized/rev-21b445a/wp-content/uploads/2022/12/Logo-Blue-2-x40.svg" alt="Console Connect logo">
+<a href="https://www.consoleconnect.com"><img src="./Console-Connect-Logo1.png" alt="Console Connect logo"></a>
 <div id="testWrapper">
 	<div id="startStopBtn" onclick="startStop()"></div><br/>
 	<?php if(getenv("TELEMETRY")=="true"){ ?>
