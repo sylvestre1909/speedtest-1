@@ -32,6 +32,7 @@ if [ "$MODE" == "frontend" ]; then
   cp /speedtest/frontend.php /var/www/html/index.php
 elif [ "$MODE" == "standalone" ]; then
   cp /speedtest/standalone.php /var/www/html/index.php
+  cp /speedtest/*.png /var/www/html/
 fi
 
 # Apply Telemetry settings when running in standalone or frontend mode and telemetry is enabled
