@@ -28,6 +28,7 @@ COPY favicon.ico /speedtest/
 COPY docker/servers.json /servers.json
 
 COPY docker/*.php /speedtest/
+COPY docker/*.png /speedtest/
 COPY docker/entrypoint.sh /
 
 # Prepare environment variabiles defaults
